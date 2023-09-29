@@ -11,7 +11,7 @@ namespace Tyuiu.PenkovEU.ConsoleApp.Lab2.V5
     {
         static void Main(string[] args)
         {
-            Console.Title = "Лабораторная работа #1 | Выполнил: Пеньков Е.Ю. | НТм-22-1";
+            Console.Title = "Лабораторная работа #2 | Выполнил: Пеньков Е.Ю. | НТм-22-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Лабораторная работа #2                                                  *");
             Console.WriteLine("* Расчёты математических выражений в C#                                   *");
