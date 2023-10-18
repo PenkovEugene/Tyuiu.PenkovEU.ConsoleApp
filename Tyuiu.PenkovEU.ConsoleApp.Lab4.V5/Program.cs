@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Tyuiu.PenkovEU.ConsoleApp.Lab4.V5.Lib;
+
+namespace Tyuiu.PenkovEU.ConsoleApp.Lab4.V5
+{
+  internal class Program
+  {
+    static void Main(string[] args)
+    {
+      DataService ds = new DataService();
+      bool result; double x; double y;
+      Console.WriteLine("Вариант 5");
+      Console.WriteLine("Выполнил студент группы НТм-22-1 Пеньков Евгений");
+      Console.WriteLine($"Введите значение X : ");
+      x = Convert.ToDouble(Console.ReadLine());
+      Console.WriteLine($"Введите значение Y : ");
+      y = Convert.ToDouble(Console.ReadLine());
+
+      result = ds.GetPointShape(x, y);
+
+      if (result)
+      {
+        Console.WriteLine("Вы попали в часть фигуры");
+      }
+
+      else { Console.WriteLine("Вы не попали в фигуру"); }
+
+      Console.ReadKey();
+    }
+  }
+}
